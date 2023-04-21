@@ -1,4 +1,6 @@
 :root {
+    --clr-1: #121212;
+    --clr0: #ff3500;
     --clr1: #262728;
     --clr2: #fff;
 }
@@ -27,7 +29,7 @@ html {
     font-family: Bona, sans-serif;
     color: var(--clr2);
     text-align: center;
-    background-color: var(--clr1);
+    background-color: var(--clr-1);
 }
 
 body {
@@ -65,12 +67,62 @@ h1 {
     margin: 0;
     font-size: clamp(10rem, 28vw, 420px);
     text-shadow: 0.01em 0.021em 0.01em #000000;
+    line-height: 0.9;
 }
 
 h2 {
     font-family: Bona, sans-serif;
+    margin: 0;
 }
 
 p {
     margin: 0 0 1em;
+}
+
+/* HEADER */
+
+.main-header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-template-rows: 0.8fr auto 1fr;
+    margin-bottom: 10rem;
+    height: 100vh;
+}
+
+.main-header p {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+}
+
+.main-header h1,
+.main-header h2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.main-header h2 {
+    justify-self: end;
+    align-self: end;
+    font-size: clamp(21px, 3.5vw, 52px);
+}
+
+/* NAVIGATION */
+.main-nav-container {
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: var(--clr0);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    transform: translateY(50%);
+}
+.main-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.main-nav a {
+    color: var(--clr2);
+    text-decoration: none;
 }
