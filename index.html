@@ -10,6 +10,12 @@
 </head>
 
 <body class="main-layout">
+    <div class="mast-head">
+        <button class="menu-btn">menu</button>
+        <span>
+            2048
+        </span>
+    </div>
     <header class="main-header">
         <p>
             <span class="colored-text">קיקרו הפקות</span><br>בשיתוף לב סרטים, אופוס הפקות ופרלייט מציגים:
@@ -23,13 +29,16 @@
                 <li><a href="#">אודות הסרט</a></li>
             </ul>
         </nav> -->
+        <a class="film-btn" href="#film">לצפייה בסרט</a>
     </header>
-    <div class="film-container">
+    <div class="film-container" id="film">
+        <!-- <h3>צפייה בסרט</h3> -->
         <div class="iframe-container">
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/6SpphIZFIao"
-                title="YouTube video player" frameborder="0"
+            <iframe rel=0 controls=0 modestbranding=1 autoplay=1 width="1280" height="720"
+                src="https://www.youtube.com/embed/6SpphIZFIao" title="2048" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 
@@ -50,15 +59,17 @@
 
     </section>
 
-    <section class="cast">
+    <section class="cast-container">
         <h3>בהשתתפות</h3>
 
-        <span>שלמה בר שביט ז"ל<img src="images/cast/1.jpg" alt="שלמה בר שביט"></span>
-        <span>גילה אלמגור<img src="images/cast/2.jpg" alt="גילה אלמגור"></span>
-        <span>עודד קוטלר<img src="images/cast/3.jpg" alt="עודד קוטלר"></span>
-        <span>דורית בר-און<img src="images/cast/4.jpg" alt="דורית בר-און"></span>
-        <span>לוטוף נוסאייר<img src="images/cast/5.jpg" alt="לוטוף נוסאייר"></span>
-        <span>אילן רוזנפלד<img src="images/cast/6.jpg" alt="אילן רוזנפלד"></span>
+        <div class="cast">
+            <span>שלמה בר שביט ז"ל<img src="images/cast/1.jpg" alt="שלמה בר שביט"></span>
+            <span>גילה אלמגור<img src="images/cast/2.jpg" alt="גילה אלמגור"></span>
+            <span>עודד קוטלר<img src="images/cast/3.jpg" alt="עודד קוטלר"></span>
+            <span>דורית בר-און<img src="images/cast/4.jpg" alt="דורית בר-און"></span>
+            <span>לוטוף נוסאייר<img src="images/cast/5.jpg" alt="לוטוף נוסאייר"></span>
+            <span>אילן רוזנפלד<img src="images/cast/6.jpg" alt="אילן רוזנפלד"></span>
+        </div>
 
     </section>
 
@@ -72,18 +83,21 @@
         </p>
         <p>
             התסריט נתפס כהזוי, מופרך, ואולי קצת חולני.. לתאר את ישראל בשנת המאה שלה, שנת 2048.<br>
-            הז'אנר התבסס על מה שאנחנו מכירים כסרטי עדויות.. סיפורם של "השורדים". כמו שאתם מבינים, זה לא היה תסריט
+            הז'אנר התבסס על מה שאנחנו מכירים כסרטי עדויות.. סיפורם של "השורדים".<br>
+            כמו שאתם מבינים, זה לא היה תסריט
             אופטימי.<br>
-            היו שאמרו לי שאני חולה נפש, עוכר ישראל, (במילה שמאלני דווקא לא השתמשו אז) המליצו לי על אשפוז מרצון... יאללה,
-            שיהיה...
+            היו שאמרו לי שאני חולה נפש, עוכר ישראל, (במילה שמאלני דווקא לא השתמשו אז) המליצו לי על אשפוז מרצון... <br>
+            יאללה, שיהיה...
         </p>
         <p>
-            חבר אחד של אבי, ניתק איתו קשר. בינינו, גם אבי היקר והאהוב, שאל "למה היית צריך את זה?<br>
-            היום 15 שנה מאוחר יותר, אני מעלה את הסרט לראשונה לרשת האינטרנט. פתוח לצפייה בחינם לעיני כל החפץ.<br>
+            חבר אחד של אבי, ניתק איתו קשר. בינינו, גם אבי היקר והאהוב, שאל "למה היית צריך את זה?"<br>
+            היום 15 שנה מאוחר יותר, אני מעלה את הסרט לראשונה לרשת האינטרנט, פתוח לצפייה בחינם לעיני כל החפץ.<br>
             על רקע מה שקורה בישראל היום יכול להיות שדווקא כן הייתי אופטימי.
         </p>
         <p>
-            אז הנה הוא לפניכם. "2048" סרט קצר, קצת יותר מ 40 דקות. תנו לעצמכם לשקוע.<br>
+            אז הנה הוא לפניכם.<br>
+            "2048" סרט קצר, קצת יותר מ 40 דקות.<br>
+            תנו לעצמכם לשקוע.<br>
             נראה לי שהמציאות המתוארת בסרט הרבה יותר קרובה למה שמי מאתנו האמין בזמנו.<br>
             הקדים את זמנו תאמרו? אני מקווה שלא.
         </p>
