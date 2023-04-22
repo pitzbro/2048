@@ -9,33 +9,86 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="main-layout">
     <header class="main-header">
-        <p>קיקרו הפקות, בשיתוף לב סרטים, אופוס הפקות ופרלייט מציגים:</p>
+        <p>
+            <span class="colored-text">קיקרו הפקות</span><br>בשיתוף לב סרטים, אופוס הפקות ופרלייט מציגים:
+        </p>
         <h1>2048</h1>
         <h2>אם תרצו, הן זו אגדה</h2>
-        <nav class="main-nav-container">
+        <!-- <nav class="main-nav-container">
             <ul class="main-nav">
                 <li><a href="#">לצפייה בסרט</a></li>
                 <li><a href="#">קרדיטים</a></li>
                 <li><a href="#">אודות הסרט</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <div class="film-container">
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/6SpphIZFIao" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-
+        <div class="iframe-container">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/6SpphIZFIao"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
     </div>
 
-    <p>הפקה אורי סבג ז"ל לימור פנחסוב עמנואל מאייר תסריט ובימוי ירון כפתורי
-        בהשתתפות גילה אלמגור דורית בר-אור שלמה בר שביט לוטוף נוסיאר עודד קוטלר אילן רוזנפלד
-        צילום עודד קירמה עריכה מני פיליפ לימור פנחסוב מפיק בפועל ועוזר בימאי אסי אורן
-        מוסיקה אבי לייבוביץ תאורה איציק לוי הקלטה תומר בלייר ליהוק רותי בלום
-        עיצוב אומנותי עדי ליקוורניק נגה מנור תמרה פלינט מלבישה דנה רענן
-    </p>
+    <section class="crew">
+        <h3>צוות</h3>
+
+        <span>הפקה <em>אורי סבג ז"ל, לימור פנחסוב, עמנואל מאייר</em></span>
+        <span>תסריט ובימוי <em>ירון כפתורי</em></span>
+        <span>צילום <em>עודד קירמה</em></span>
+        <span>עריכה <em>מני פיליפ, לימור פנחסוב</em></span>
+        <span>מפיק בפועל ועוזר בימאי <em>אסי אורן</em></span>
+        <span>מוסיקה <em>אבי לייבוביץ</em></span>
+        <span>תאורה <em>איציק לוי</em></span>
+        <span>הקלטה <em>תומר בלייר</em></span>
+        <span>ליהוק <em>רותי בלום</em></span>
+        <span>עיצוב אומנותי <em>עדי ליקוורניק, נגה מנור, תמרה פלינט</em></span>
+        <span>מלבישה <em>דנה רענן</em></span>
+
+    </section>
+
+    <section class="cast">
+        <h3>בהשתתפות</h3>
+
+        <span>שלמה בר שביט ז"ל<img src="images/cast/1.jpg" alt="שלמה בר שביט"></span>
+        <span>גילה אלמגור<img src="images/cast/2.jpg" alt="גילה אלמגור"></span>
+        <span>עודד קוטלר<img src="images/cast/3.jpg" alt="עודד קוטלר"></span>
+        <span>דורית בר-און<img src="images/cast/4.jpg" alt="דורית בר-און"></span>
+        <span>לוטוף נוסאייר<img src="images/cast/5.jpg" alt="לוטוף נוסאייר"></span>
+        <span>אילן רוזנפלד<img src="images/cast/6.jpg" alt="אילן רוזנפלד"></span>
+
+    </section>
+
+    <section class="about">
+        <h3>אודות הסרט</h3>
+        <p> בשנת 2008 ביום העצמאות של מדינת ישראל יצאתי לצלם סרט.</p>
+        <p>
+            סרט שיצא לדרך ללא תקציב, במימון פרטי, עם הרבה עזרה מחברים טובים ושחקנים מוכשרים להפליא, שהתגייסו למשימה,
+            ונרתמו
+            כמעט בחינם.
+        </p>
+        <p>
+            התסריט נתפס כהזוי, מופרך, ואולי קצת חולני.. לתאר את ישראל בשנת המאה שלה, שנת 2048.<br>
+            הז'אנר התבסס על מה שאנחנו מכירים כסרטי עדויות.. סיפורם של "השורדים". כמו שאתם מבינים, זה לא היה תסריט
+            אופטימי.<br>
+            היו שאמרו לי שאני חולה נפש, עוכר ישראל, (במילה שמאלני דווקא לא השתמשו אז) המליצו לי על אשפוז מרצון... יאללה,
+            שיהיה...
+        </p>
+        <p>
+            חבר אחד של אבי, ניתק איתו קשר. בינינו, גם אבי היקר והאהוב, שאל "למה היית צריך את זה?<br>
+            היום 15 שנה מאוחר יותר, אני מעלה את הסרט לראשונה לרשת האינטרנט. פתוח לצפייה בחינם לעיני כל החפץ.<br>
+            על רקע מה שקורה בישראל היום יכול להיות שדווקא כן הייתי אופטימי.
+        </p>
+        <p>
+            אז הנה הוא לפניכם. "2048" סרט קצר, קצת יותר מ 40 דקות. תנו לעצמכם לשקוע.<br>
+            נראה לי שהמציאות המתוארת בסרט הרבה יותר קרובה למה שמי מאתנו האמין בזמנו.<br>
+            הקדים את זמנו תאמרו? אני מקווה שלא.
+        </p>
+    </section>
+
 </body>
 
 </html>
