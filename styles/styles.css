@@ -35,6 +35,27 @@
     src: url(../fonts/Colonna/colonna-mt-std.otf);
 }
 
+@font-face {
+    font-family: fa;
+    src: url(../fonts/FontAwesome/fa-brands-400.ttf);
+}
+
+.fa::before {
+    font-family: fa;
+}
+
+.fa.facebook::before {
+    content: "\f39e";
+}
+
+.fa.twitter::before {
+    content: "\f099";
+}
+
+.fa.whatsapp::before {
+    content: "\f232";
+}
+
 html {
     /* font-family: IBM; */
     font-family: Bona, sans-serif;
@@ -186,9 +207,42 @@ body.full-header .mast-head > span {
     font-size: clamp(21px, 3.5vw, 44px);
 }
 
+.main-header .action-btns {
+    grid-area: 3 / 2 / 4 / 3;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6em;
+    margin: 6rem 0;
+}
+
+.main-header .social-links {
+    display: inline-grid;
+    grid-auto-flow: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 1em;
+}
+
+.main-header .social-links a {
+    background-color: var(--clr2);
+    color: var(--clr-1);
+    text-decoration: none;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header .social-links a:hover {
+    background-color: var(--clr3);
+}
+
 .main-header .film-btn {
     font-family: IBM, sans-serif;
-    grid-area: 3 / 2 / 4 / 3;
     background-color: var(--clr0);
     border-radius: 2em;
     align-self: center;
@@ -199,7 +253,6 @@ body.full-header .mast-head > span {
     box-shadow: 0px 4px 12px var(--clr-1);
     border-bottom: 1px solid var(--clr3);
     font-size: 1.125rem;
-    margin: 6rem 0;
 }
 
 /* NAVIGATION */
@@ -363,4 +416,12 @@ body.menu-open .menu-btn:after {
 
 body.menu-open .menu-btn span {
     transform: scale(0);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 820px) {
+    .main-header .action-btns {
+        grid-auto-flow: column;
+    }
 }
